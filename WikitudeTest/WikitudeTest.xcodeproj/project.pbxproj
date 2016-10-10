@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4405B6D21D9B5470006AA6EF /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4405B6D11D9B5470006AA6EF /* WikitudeSDK.framework */; };
+		441A0E161DA8D6E000047416 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 441A0E151DA8D6E000047416 /* libstdc++.6.0.9.tbd */; };
+		441A0E181DA8D6F400047416 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441A0E171DA8D6F400047416 /* CoreTelephony.framework */; };
+		441A0E221DA8DF7A00047416 /* WikitudeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4405B6D11D9B5470006AA6EF /* WikitudeSDK.framework */; };
 		4425DE811D8F996100F07AB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425DE801D8F996100F07AB4 /* main.m */; };
 		4425DE841D8F996100F07AB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425DE831D8F996100F07AB4 /* AppDelegate.m */; };
 		4425DE871D8F996100F07AB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425DE861D8F996100F07AB4 /* ViewController.m */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		4405B6D11D9B5470006AA6EF /* WikitudeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WikitudeSDK.framework; sourceTree = "<group>"; };
+		441A0E151DA8D6E000047416 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		441A0E171DA8D6F400047416 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		4425DE7C1D8F996100F07AB4 /* WikitudeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikitudeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425DE801D8F996100F07AB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4425DE821D8F996100F07AB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,12 +97,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441A0E221DA8DF7A00047416 /* WikitudeSDK.framework in Frameworks */,
+				441A0E181DA8D6F400047416 /* CoreTelephony.framework in Frameworks */,
+				441A0E161DA8D6E000047416 /* libstdc++.6.0.9.tbd in Frameworks */,
 				44DE14731D925B5B00F7274D /* libz.tbd in Frameworks */,
 				44DE14711D925B5300F7274D /* libc++.tbd in Frameworks */,
 				44DE146F1D925B4700F7274D /* UIKit.framework in Frameworks */,
 				44DE146D1D925B4000F7274D /* SystemConfiguration.framework in Frameworks */,
 				44DE146B1D925B3A00F7274D /* Security.framework in Frameworks */,
-				4405B6D21D9B5470006AA6EF /* WikitudeSDK.framework in Frameworks */,
 				44DE14691D925B3300F7274D /* QuartzCore.framework in Frameworks */,
 				44DE14671D925B2D00F7274D /* OpenGLES.framework in Frameworks */,
 				44DE14651D925B2700F7274D /* MediaPlayer.framework in Frameworks */,
@@ -168,6 +174,8 @@
 		44DE144D1D925AA400F7274D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				441A0E171DA8D6F400047416 /* CoreTelephony.framework */,
+				441A0E151DA8D6E000047416 /* libstdc++.6.0.9.tbd */,
 				4405B6D11D9B5470006AA6EF /* WikitudeSDK.framework */,
 				44DE14721D925B5B00F7274D /* libz.tbd */,
 				44DE14701D925B5300F7274D /* libc++.tbd */,

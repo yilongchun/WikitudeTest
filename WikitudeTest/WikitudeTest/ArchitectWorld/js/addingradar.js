@@ -58,10 +58,15 @@ var World = {
 				"id": poiData[currentPlaceNr].id,
 				"latitude": parseFloat(poiData[currentPlaceNr].latitude),
 				"longitude": parseFloat(poiData[currentPlaceNr].longitude),
-				"altitude": parseFloat(poiData[currentPlaceNr].altitude),
+				"altitude": parseFloat(currentPlaceNr*150),
 				"title": poiData[currentPlaceNr].name,
 				"description": poiData[currentPlaceNr].description
 			};
+            
+            AR.logger.debug(poiData[currentPlaceNr].altitude);
+            
+//            if(currentPlaceNr == 0)
+//                singlePoi.altitude = 5;
             
 			World.markerList.push(new Marker(singlePoi));
 		}
@@ -132,6 +137,8 @@ var World = {
 //		$("#panel-poidetail").on("panelbeforeclose", function(event, ui) {
 //			World.currentMarker.setDeselected(World.currentMarker);
 //		});
+        
+        AR.logger.debug("marker.distanceToUser:"+marker.distanceToUser);
         
         // deselect previous marker
         if (World.currentMarker) {
@@ -215,7 +222,7 @@ var World = {
 		World.updateStatusMessage('Requesting places from web-service');
 
 		// server-url to JSON content provider
-		var serverUrl = ServerInformation.POIDATA_SERVER + "?" + ServerInformation.POIDATA_SERVER_ARG_LAT + "=" + lat + "&" + ServerInformation.POIDATA_SERVER_ARG_LON + "=" + lon + "&" + ServerInformation.POIDATA_SERVER_ARG_NR_POIS + "=20";
+		var serverUrl = ServerInformation.POIDATA_SERVER + "?" + ServerInformation.POIDATA_SERVER_ARG_LAT + "=" + lat + "&" + ServerInformation.POIDATA_SERVER_ARG_LON + "=" + lon + "&" + ServerInformation.POIDATA_SERVER_ARG_NR_POIS + "=1";
 
 		var jqxhr = $.getJSON(serverUrl, function(data) {
 			World.loadPoisFromJsonData(data);

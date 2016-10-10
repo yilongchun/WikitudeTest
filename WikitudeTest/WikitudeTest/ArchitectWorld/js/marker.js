@@ -15,6 +15,8 @@ function Marker(poiData) {
 
 
     // create the AR.GeoLocation from the poi data
+    
+    
     var markerLocation = new AR.GeoLocation(poiData.latitude, poiData.longitude, poiData.altitude);
 
     // create an AR.ImageDrawable for the marker in idle state
@@ -56,7 +58,7 @@ function Marker(poiData) {
     
     var _html="<div class='zdyDemo' style='height:600px;font-size:5em;border-radius:0.3em;background:#fff;position:relative'>";
     _html+="<img src='http://img.qlxing.com/0a131bec-408a-404f-825f-3f9b959204dd' style='width:100%;height:600px;border-radius:0.3em'/>";
-    _html+="<span style='position:absolute;height:1.5em;bottom:0px;background:rgba(0,0,0,0.6);z-index:100;display:block;width:100%;color:#fff;line-height:1.5em;padding-left:0.4em;font-size:0.6em;border-radius:0 0 0.5em 0.5em;'>武胜西街13-432号</span>";
+    _html+="<span style='position:absolute;height:1.5em;bottom:0px;background:rgba(0,0,0,0.6);z-index:100;display:block;width:100%;color:#fff;line-height:1.5em;padding-left:0.4em;font-size:0.6em;border-radius:0 0 0.5em 0.5em;'>武胜西街13-432号--距离:</span>";
     _html+="<span style='position:absolute;height:1em;bottom:0.5em;width:100%;display:block;z-index:120;padding-left:0.2em;'><img src='https://wap.qlxing.com/images/activity/startOne.png'/><img src='https://wap.qlxing.com/images/activity/startOne.png'/><img src='https://wap.qlxing.com/images/activity/startOne.png'/><img src='https://wap.qlxing.com/images/activity/startOne.png'/><img src='https://wap.qlxing.com/images/activity/startOne.png'/></span>";
     _html+="</div>";
     
