@@ -63,13 +63,29 @@ var World = {
 				"description": poiData[currentPlaceNr].description
 			};
             
-            AR.logger.debug(poiData[currentPlaceNr].altitude);
+            //AR.logger.debug(poiData[currentPlaceNr].altitude);
             
 //            if(currentPlaceNr == 0)
 //                singlePoi.altitude = 5;
             
 			World.markerList.push(new Marker(singlePoi));
 		}
+        
+//        AR.logger.debug("poiData.length:"+poiData.length);
+//        for (var currentPlaceNr = 0; currentPlaceNr < 10; currentPlaceNr++) {
+//            AR.logger.debug("currentPlaceNr:"+currentPlaceNr);
+//            var singlePoi = {
+//                
+//                "latitude": parseFloat(poiData[0].latitude-0.008*currentPlaceNr),
+//                "longitude": parseFloat(poiData[0].longitude+0.033*currentPlaceNr),
+//                "altitude": parseFloat(currentPlaceNr)
+//                
+//            };
+//            AR.logger.debug("currentPlaceNr:"+currentPlaceNr);
+//            World.markerList.push(new line(singlePoi));
+//            AR.logger.debug("add line");
+//        }
+        
         
 		// updates distance information of all placemarks
 		World.updateDistanceToUserValues();
@@ -216,6 +232,12 @@ var World = {
 
 	// request POI data
 	requestDataFromServer: function requestDataFromServerFn(lat, lon) {
+        
+        
+        
+        
+        
+        
 
 		// set helper var to avoid requesting places while loading
 		World.isRequestingData = true;
